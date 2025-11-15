@@ -1,0 +1,35 @@
+{
+  "uid": "app-vectorshiftoauthintegration",
+  "type": "app",
+  "config": {
+    "description": "An example to demonstrate how to build a marketplace app with developer projects.",
+    "name": "vectorshift oauth integration-Application",
+    "distribution": "marketplace",
+    "auth": {
+      "type": "oauth",
+      "redirectUrls": [
+        "http://localhost:8000/integrations/hubspot/oauth2callback"
+      ],
+      "requiredScopes": [
+        "oauth",
+        "crm.objects.contacts.read",
+        "crm.objects.contacts.write","crm.objects.companies.read",  "crm.objects.deals.read"
+      ],
+      "optionalScopes": [],
+      "conditionallyRequiredScopes": []
+    },
+    "permittedUrls": {
+      "fetch": [
+        "https://api.hubapi.com"
+      ],
+      "iframe": [],
+      "img": []
+    },
+    "support": {
+      "supportEmail": "support@example.com",
+      "documentationUrl": "https://example.com/docs",
+      "supportUrl": "https://example.com/support",
+      "supportPhone": "+18005555555"
+    }
+  }
+}
